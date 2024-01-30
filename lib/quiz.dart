@@ -41,7 +41,7 @@ class _QuizState extends State<Quiz> {
       isCorrect = answer == questions[currentQuestionIndex]['correctAnswer'];
     });
 
-    Future.delayed(Duration(seconds: 2), () {
+    Future.delayed(Duration(milliseconds: 300), () {
       setState(() {
         selectedAnswer = null;
         isCorrect = null;
